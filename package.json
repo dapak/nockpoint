@@ -1,0 +1,39 @@
+{
+  "name"        : "nockpoint",
+  "version"     : "0.1.0",
+  "description" : "Utilizes node and redis for the dynamic creation of mock http request endpoints.",
+  "author"      : "Daniel Khodaparast <me@dapak.me>",
+  "keywords"    : [
+    "endpoint",
+    "http",
+    "mock",
+    "redis",
+    "request"
+  ],
+  "licenses" : [{
+    "type" : "MIT",
+    "url"  : "https://github.com/dapak/nockpoint/master/LICENSE"
+  }],
+  "repository" : {
+    "type" : "git",
+    "url"  : "git://github.com/dapak/nockpoint.git"
+  },
+  "bin" : {
+    "nockpoint": "bin/nockpoint.js"
+  },
+  "bugs" : {
+    "url" : "https://github.com/dapak/nockpoint/issues"
+  },
+  "dependencies" : {
+    "hiredis"    : "~0.1.14",
+    "optimist"   : "0.3.x",
+    "portfinder" : "~0.2.1",
+    "redis"      : "~0.8.2",
+    "winston"    : "0.6.x"
+  },
+  "engines" : [
+    "node >= 0.8.14"
+  ],
+  "main" : "lib/nockpoint.js",
+  "preferGlobal" : true
+}
