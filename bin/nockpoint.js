@@ -10,6 +10,7 @@ if (args.h || args.help) {
     "usage: nockpoint [options]",
     "",
     "options:",
+    "  -a            hostname to serve from (localhost)",
     "  -p            port to utilize (8080)",
     "  -r            redis host:port (localhost:6379)",
     "  -s            suppress logging",
@@ -20,6 +21,7 @@ if (args.h || args.help) {
 }
 
 var options = {
+  'host'   : args.a || 'localhost',
   'port'   : args.p || 8080,
   'redis'  : args.r || 'localhost:6379',
   'silent' : args.s || false,
